@@ -25,7 +25,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/assets/css/style.css",
+              "src/assets/css/aos.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/jquery.fancybox.min.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/owl.theme.default.min.css"
             ],
             "scripts": []
           },

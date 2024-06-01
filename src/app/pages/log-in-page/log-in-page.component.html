@@ -1,0 +1,46 @@
+<app-nav-bar></app-nav-bar>
+
+
+
+
+<div class="hero hero-inner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mx-auto text-center">
+        <div class="intro-wrap">
+          <h1 class="mb-0 pb-5">LOG IN</h1>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label  p-2" style="color: beige;">Email address</label>
+              <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text  pt-2" style="color: beige;">We'll never share your email with anyone
+                else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label  p-2" style="color: beige;">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1" style="color: beige;">Check me out</label>
+            </div>
+            <button type="login" class="btn btn-secondary">Log In</button>
+            <div id="signUp" class="form-text  pt-2" style="color: beige;">Sign Up here to register.
+              <a href="sign-up" [routerLink]="['/sign-up']" routerLinkActive="router-link-active"
+              class="link-primary text-decoration-none">
+              <button class="btn btn-primary">Sign Up</button>
+            </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+</div>
+
+<app-footer></app-footer>
