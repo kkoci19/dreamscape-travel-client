@@ -32,7 +32,8 @@
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/jquery.fancybox.min.css",
               "src/assets/css/owl.carousel.min.css",
-              "src/assets/css/owl.theme.default.min.css"
+              "src/assets/css/owl.theme.default.min.css",
+              "src/assets/css-2/animate.css"
             ],
             "scripts": []
           },
@@ -50,7 +51,13 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
             },
             "development": {
               "optimization": false,

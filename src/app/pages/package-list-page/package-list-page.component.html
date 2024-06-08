@@ -1,15 +1,3 @@
-<!--
-  <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div> -->
-
-
-
 <app-nav-bar></app-nav-bar>
 
 <div class="hero hero-inner">
@@ -26,63 +14,39 @@
   </div>
 </div>
 
-
-
 <div class="untree_co-section">
   <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-6 col-lg-3">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-6">
+        <h2 class="section-title text-center mb-3">Special Offers &amp; Discounts</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+          texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      </div>
+    </div>
+    <div class="row" >
+@for (pack of items; track pack) {
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
         <div class="media-1">
-          <a href="#" class="d-block mb-3"><img src="./assets/images/hero-slider-1.jpg" alt="Image"
+          <a href="#" class="d-block mb-3">
+            <img [src]="environment.apiBaseUrl + pack.imagePath +'/' + pack.imageName " alt="Image"
               class="img-fluid"></a>
-          <div class="d-flex">
+          <span class="d-flex align-items-center loc mb-2">
+            <span class="icon-room mr-3"></span>
+            <span>Italy</span>
+          </span>
+          <div class="d-flex align-items-center">
             <div>
-              <h3><a href="#">Excellence in Travel</a></h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts.</p>
+              <h3><a href="/package-details" [routerLink]="'/package-details/'+ pack.id"> {{pack.name}}</a></h3>
+              <div class="price ml-auto">
+                <span>{{pack.price}}</span>
+              </div>
             </div>
+
           </div>
+
         </div>
       </div>
-      <div class="col-6 col-md-6 col-lg-3">
-        <div class="media-1">
-          <a href="#" class="d-block mb-3"><img src="./assets/images/hero-slider-2.jpg" alt="Image"
-              class="img-fluid"></a>
-          <div class="d-flex">
-            <div>
-              <h3><a href="#">Discovering Best</a></h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-6 col-lg-3">
-        <div class="media-1">
-          <a href="#" class="d-block mb-3"><img src="./assets/images/hero-slider-3.jpg" alt="Image"
-              class="img-fluid"></a>
-          <div class="d-flex">
-            <div>
-              <h3><a href="#">A New Moments of Life</a></h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-6 col-lg-3">
-        <div class="media-1">
-          <a href="#" class="d-block mb-3"><img src="./assets/images/hero-slider-4.jpg" alt="Image"
-              class="img-fluid"></a>
-          <div class="d-flex">
-            <div>
-              <h3><a href="#">Joy To Your Journey</a></h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    }
     </div>
   </div>
 </div>
@@ -205,25 +169,3 @@
 
 
 <app-footer></app-footer>
-
-<!-- <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/moment.min.js"></script>
-  <script src="js/daterangepicker.js"></script>
-
-  <script src="js/typed.js"></script>
-
-  <script src="js/custom.js"></script> -->
